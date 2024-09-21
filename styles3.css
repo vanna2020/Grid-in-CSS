@@ -1,0 +1,26 @@
+body {
+  padding: 32px;
+}
+
+.container-rows {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 50px; /* Sets the height of any implicit rows */
+  gap: 10px;
+}
+.item-row {
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+.container-col {
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-auto-columns: 150px; /* Sets the width of any implicit columns */
+  gap: 10px;
+  margin-top: 10%;
+}
+.item-col {
+  background-color: lightgreen;
+  border: 1px solid green;
+}

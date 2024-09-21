@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  justify-items: center; /* Centers all grid items horizontally */
+  gap: 10px;
+}
+.item {
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  justify-items: start; /* Default alignment for all items */
+  gap: 10px;
+}
+.item-1 {
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+.item.special {
+  justify-self: end; /* Overrides the default for this item */
+}

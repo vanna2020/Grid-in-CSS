@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid in CSS</title>
+    <link rel="stylesheet" href="styles5.css" />
+  </head>
+  <body>
+    <!-- Task 5 => Explain the difference between justify-items and justify-self
+    using code examples. -->
+
+    <!-- Ans => justify-items and justify-self are both properties in CSS Grid Layout
+    that control the alignment of grid items, but they have different scopes of
+    application.
+
+    justify-items :
+    Scope: Applies to all items in the grid container.
+    Usage: Defines the default alignment of all items along the row axis (horizontally).
+
+    Example of justify-items =>  -->
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <!-- justify-self :
+    Scope: Applies to individual grid items.
+    Usage: Overrides the justify-items setting for specific items.
+
+    Example of justify-self =>  -->
+    <div class="container-2">
+      <div class="item-1">1</div>
+      <div class="item special">2</div>
+      <div class="item-1">3</div>
+      <div class="item-1">4</div>
+      <div class="item-1">5</div>
+    </div>
+  </body>
+</html>
